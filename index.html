@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+    <script src="https://kit.fontawesome.com/88e1f4ddbb.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .items1{grid-area: header;}
+        .items2{grid-area: navigation;}
+        .items3{grid-area:card1;}
+        .items4{grid-area:card2;}
+        .items5{grid-area:card3}
+        .items6{grid-area:card4}
+        .items7{grid-area:footer;}
+        .main-container{
+            display:grid;
+            grid-template-areas: 
+            'navigation header header header'
+            'navigation card1 card2 card3'
+            'navigation card1 card2 card3'
+            'navigation footer footer footer';
+           
+            flex-wrap: wrap;
+          
+        }
+
+        .main-container > div {
+            background-color: aqua;
+            border: 2px solid black;
+            padding: 100px;
+
+        }
+        .items1{
+            color: white;
+        }
+      .mail a{
+        text-decoration: none;
+      }
+      .mail a:hover{
+        color: white;
+      }
+      .main-container .items1{
+        background-color: black;
+      }
+        
+        .items7{
+            background-color: red;
+            text-align: center;
+        }
+        .main-container .items7{
+            background-color: black;
+            text-align: center;
+        }
+        .items7 a i {
+            padding: 30px;
+            font-size: 50px;
+            
+       
+
+        }
+        .items7 span{
+            color: white;
+            font-weight: bold;
+        }
+        .items7 a i:hover{
+            color:azure;
+        }
+
+        .items2 img{
+            width: 200px;
+            height: 200px;
+            margin-right: 60px;
+            
+        }
+     
+        .items2 i{
+            display: block;
+            padding: 50px;
+            text-decoration: none;
+            color: blue;
+            
+
+        }
+        .main-container .items2{
+            background-color:rgb(17, 10, 10);
+        }
+        .items3 p{
+            font-size: 50px;
+            line-break: 30px;
+            
+            
+
+        }
+        .items3  ::first-letter{
+            font-size: 80px;
+            color: red;
+        }
+        .items4 p{
+            font-size: 50px;
+            line-break: 30px;
+       
+        }
+        .items4  ::first-letter{
+            font-size: 80px;
+            color: blue;
+        }
+
+       .items5 .items5-heading h3{
+        color: brown;
+       }
+       .items5 .items5-list{
+        font-size: 30px;
+       }
+      
+        
+       
+       
+       
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="items1">
+            <h1>Rabiul Hassan Robi</h1>
+            <h3>Web Developer</h3>
+
+            <br>
+            <div class="mail"><a href="mailto:rabiulhassanrobi31443161@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>Email:rabiulhassanrobi31443161@gmail.com</a><br>
+            <a href="tel:01831443161" target="_blank"><i class="fa-solid fa-phone"></i>01831443161</a></div>
+           
+
+        </div>
+        <div class="items2">
+            <img src="robi.png" alt="robi" title="rabil hassan robi">
+            <i class="fa-solid fa-house">HOME</i>
+            <i class="fa-solid fa-graduation-cap">EDUCATION</i>
+            <a href="LATEXRABIULMIAH.pdf" target="_blank"><i class="fa-solid fa-file">RESUME</i></a>
+            <i class="fa-solid fa-briefcase">JOB-HISTOTY</i>
+            <i class="fa-solid fa-star">SKILLS</i>
+            <i class="fa-solid fa-address-book">CONTACT</i>
+            
+        </div>
+        <div class="items3">
+            <p>Seeking a challenging position in a reputed organization where I can learn new skills, expand my knowledge, and leverage my learnings.</p>
+        </div>
+        <div class="items4">
+            <p>To get an opportunity where I can make the best of my potential and contribute to the organization's growth.</p>
+        </div>
+        <div class="items5">
+            <div class="items5-heading"><h3>Sports / Game / Activities / Hobby</h3></div>
+            <div class="items5-list">
+                <ul>
+                    <li>🏏 Cricket, ⚽ Football, 🏸 Badminton</li>
+                    <li>🏊‍♂️ Swimming, 🏃‍♂️ Running, 🚶‍♂️ Walking</li>
+                    <li>✈️ Travelling</li>
+                </ul>
+
+            </div>
+        </div>
+        
+        <div class="items7">
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+            <a href="https://github.com/rabiulislamrobi" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rabiulmiah/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube" target="-blank"></i></a>
+            <br>
+        
+            &copy;<span>copyrightbyrobiulhassanrobi</span>
+        </div>
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
